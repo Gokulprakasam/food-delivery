@@ -26,6 +26,8 @@ body {
   color: #382ba5;
   padding: 12px;
   font-size: 18px;
+  transition: all 0.3s;
+  border: 1px solid #fff;
 }
 .banner-bg {
   background: url("https://codewithsadee.github.io/fasteat/assets/images/hero-bg.png");
@@ -251,4 +253,57 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+.subs:focus {
+  border: 1px solid #382ba5;
+}
+.bag-btn:hover {
+  border: 1px solid #382ba5;
+}
+/* [data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s ease;
+}
+
+[data-reveal="left"] {
+  transform: translateX(-20px);
+}
+
+[data-reveal="right"] {
+  transform: translateX(20px);
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translate(0);
+} */
+.reveal-right {
+  animation: slide-right 2s forwards;
+}
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.reveal-left {
+  animation: slide-left 2s forwards;
+}
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+#navbar {
+  z-index: 10000;
 }
