@@ -306,4 +306,10 @@ body {
 }
 #navbar {
   z-index: 10000;
+  transition: 0.3s;
+}
+.about h1 {
+  font-size: 4rem;
+  color: #382ba5;
+  font-weight: 700;
 }
